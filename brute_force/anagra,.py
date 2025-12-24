@@ -15,22 +15,33 @@ s2 = "rusiy"
 # else:
 #     print("not anagram")
 
-d = {}
+# d = {}
 
-if len(s1) == len(s2):
-    for i in s1:
-        d[i] = d.get(i, 0) + 1
-    for i in s2:
-        d[i] = d.get(i, 0) - 1
+# if len(s1) == len(s2):
+#     for i in s1:
+#         d[i] = d.get(i, 0) + 1
+#     for i in s2:
+#         d[i] = d.get(i, 0) - 1
 
-    for i in d.values():
-        if i != 0:
-            False
-        else:
-            True
+#     for i in d.values():
+#         if i != 0:
+#             False
+#         else:
+#             True
 
-    
+# print(d)
+s = "anagram"
+t = "anagram"
+
+data = [0]*26
+
+if len(s) == len(t):
+    for i in range(len(s)):
+        data[ord(s[i]) - ord('a')] += 1
+        data[ord(t[i]) - ord('a')] -= 1
+    for i in data:
+        if i == 0:
+               print("angram")
             
     
-print(d)
     
