@@ -10,6 +10,6 @@ def fibonacci_series(n):
         
         for i in range(2,n + 1):
             fib[i] = fib[i - 1] + fib[i - 2]     
-            print(f"fibonacci series up to {n}th term.")
-            print(" ".join(str(num) for num in fib))
+        print(f"fibonacci series up to {n}th term.")
+        print(" ".join(str(num) for num in fib))
 fibonacci_series(6)
