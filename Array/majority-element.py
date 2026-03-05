@@ -5,9 +5,13 @@ def majority_element(nums):
     """
     count = {}
     for num in nums:
-        count[num] += 1
+        count[num] = count.get(num, 0) + 1
+        print(count)
         if count.get(num) // 2 == 0:
-            return num       
-    return None
+            print(count)
+            return f'Majority Element is {num}'
+        if count.get(num, 0) > len(nums) // 2:
+            return f'Majority Element is {num}'
+    return 'No Majority Element'
  
-print(majority_element([2, 2, 1, 1, 1, 2, 2]))
+print(majority_element([2, 2, 1, 1, 1, 2, 2,1 ,1,1, 1]))
