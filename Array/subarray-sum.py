@@ -1,4 +1,6 @@
 def sub_array_sum(arr, target):
+    """
+    Given an array of integers and a target sum, determine if there is a contiguous subarray that sums up to the target."""
     current_sum = 0
     start = 0
 
