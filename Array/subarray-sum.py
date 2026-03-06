@@ -15,3 +15,5 @@ def sub_array_sum(arr, target):
             return True
 
     return False
+
+print(sub_array_sum([1, 2, 3, 4, 5], 9))  
