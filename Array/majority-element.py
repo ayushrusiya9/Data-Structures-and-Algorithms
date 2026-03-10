@@ -13,5 +13,5 @@ def majority_element(nums):
         if count.get(num, 0) > len(nums) // 2:
             return f'Majority Element is {num}'
     return 'No Majority Element'
- 
+
 print(majority_element([2, 2, 1, 1, 1, 2, 2,1 ,1,1, 1]))
