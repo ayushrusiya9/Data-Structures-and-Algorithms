@@ -22,7 +22,7 @@ def main():
     print("3. Multiply")
     print("4. Divide")
 
-    choice = input("Enter choice (1/2/3/4): ")
+    choice = input("Enter choice  (1/2/3/4): ")
     a = float(input("Enter first number: "))
     b = float(input("Enter second number: "))
 
@@ -36,6 +36,9 @@ def main():
         print(f"Result: {divide(a, b)}")
     else:
         print("Invalid input")
+
+if __name__ == "__main__":
+    main()
 
 if __name__ == "__main__":
     main()
