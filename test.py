@@ -13,3 +13,4 @@ def main():
     print(winthegift(n , x))
 
 main()
+main()
