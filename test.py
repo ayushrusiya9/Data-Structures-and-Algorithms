@@ -4,6 +4,7 @@ def winthegift(n , x):
         count += 1
         if count > n:
             count = 1
+
         x -= 1
     return count
 def main():
