@@ -8,6 +8,7 @@ def divisiorsOfNumber(num : int):
         if num % d == 0:
             n.append(d)
         d = d + 1
+
     return n
 
 print(divisiorsOfNumber(32))   
