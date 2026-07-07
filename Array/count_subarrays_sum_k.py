@@ -3,13 +3,14 @@
 
 def count_subarrays_with_sum_k(arr, k):
     count = 0
-    n = len(arr)
-    for start in range(n):
-        curr_sum = 0
-        for end in range(start, n):
-            curr_sum += arr[end]
-            if curr_sum == k:
-                count += 1
+    prefix_sum = 0
+    seen_sums = {0: 1}
+
+    for num in arr:
+        prefix_sum += num
+        count += seen_sums.get(prefix_sum - k, 0)
+        seen_sums[prefix_sum] = seen_sums.get(prefix_sum, 0) + 1
+
     return count
 
 if __name__ == "__main__":
